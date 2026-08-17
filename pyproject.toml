@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actionaudit"
+version = "0.1.0"
+description = "Audit GitHub Actions workflows for pinning and trusted source issues."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+actionaudit = "actionaudit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["actionaudit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
