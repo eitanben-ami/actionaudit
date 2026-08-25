@@ -10,7 +10,7 @@ __all__ = [
     "ActionAuditReport",
     "AuditIssue",
     "ActionReport",
-    "parse_workflow",
+    "parse_workflows",
     "apply_rules",
     "render_report",
 ]
