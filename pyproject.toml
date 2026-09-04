@@ -11,6 +11,9 @@ requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = ["PyYAML>=6.0"]
 
+[project.urls]
+Repository = "https://github.com/eitanben-ami/actionaudit"
+
 [project.scripts]
 actionaudit = "actionaudit.cli:main"
 

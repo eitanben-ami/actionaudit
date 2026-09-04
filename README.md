@@ -34,6 +34,8 @@ actionaudit ./.github/workflows --json
 actionaudit ./.github/workflows --markdown
 ```
 
+Repository: https://github.com/eitanben-ami/actionaudit
+
 ## Project structure
 
 ```
