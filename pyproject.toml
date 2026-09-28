@@ -10,12 +10,36 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = ["PyYAML>=6.0"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: System :: Systems Administration",
+    "Typing :: Typed",
+]
 
 [project.urls]
 Repository = "https://github.com/eitanben-ami/actionaudit"
 
 [project.scripts]
 actionaudit = "actionaudit.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "pyyaml>=6.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]

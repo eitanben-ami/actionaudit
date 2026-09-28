@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-import inspect
 import json
 import tempfile
 from pathlib import Path
 
-import pytest
 
 from actionaudit.cli import main
 from actionaudit.models import ActionAuditReport, Job, Step, Workflow

@@ -2,9 +2,8 @@ from __future__ import annotations
 
 import json
 import sys
-from typing import List
 
-from .models import ActionAuditReport, AuditIssue
+from .models import ActionAuditReport
 
 
 def render_report(report: ActionAuditReport, format: str = "text") -> str:
